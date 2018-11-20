@@ -6,9 +6,14 @@
     background: grey;
 }
 
-mat-card{
+.mat-tab-nav-bar{
+  margin: 5em 20em;
+  width:20em;
+}
+
+.mat-card{
     width: 20em;
-    margin: 20em 20em;
+    margin: auto 20em;
     background: whitesmoke;
 }
 form {
@@ -27,4 +32,7 @@ form {
 .mat-form-field {
   margin-bottom: .5em;
 }
+
+
+
 

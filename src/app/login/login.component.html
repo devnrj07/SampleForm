@@ -2,11 +2,23 @@
 <html>
 <body>
 
-  <mat-tab-group dynamicHeight>
-    <mat-tab label="Sign In">
+  <div class="tabhead">
+  <nav mat-tab-nav-bar mat-align-tabs="center">
+    
       
-        
-        <mat-card>
+      <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.path"
+     routerLinkActive #rla="routerLinkActive"
+     [routerLinkActiveOptions]="{exact:true}"
+     [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav> 
+</div>      
+
+      
+       <mat-card>
           <mat-card-title>Employeer
           
             <mat-card-header align="end">
@@ -38,18 +50,8 @@
           </mat-card-actions>
         
         </mat-card>
-       
-    </mat-tab>
-    <mat-tab label="Sign Up">
-      
-        <a  routerLink="/sign"> </a>
-  
+    
 
-    </mat-tab>
-  </mat-tab-group>
-
-  <a  routerLink="/sign">sign up </a>
-
-
+  <router-outlet></router-outlet>
 </body>
 </html>

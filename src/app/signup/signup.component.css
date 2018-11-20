@@ -1,17 +1,6 @@
 
-    .container {
-             display:block;
-              margin-top: 50px;
-              background: rgb(43, 39, 39);
-              
-    }
-                                         // Workaround for https://github.com/angular/material2/issues/4580.
-    mat-form-field .mat-form-field {
-      &-underline {
-        position: relative;
-        bottom: auto;
-      }
-    }
+   
+                                      
     .section-title {
       margin-bottom: 20px;
     }
@@ -47,10 +36,10 @@
     .full-width {
       content: '';
       align-content: center;
-      margin-left: 30%;
+      
       display:block;
       height: 50%;
-      width: 30%;
+      width: 20em;
       margin-bottom: 10px;
     }
   
@@ -76,4 +65,26 @@
       margin-top: 20px;
       margin-left: 40%;
     }
+
+    .mat-card{
+      width: 30em;
+      margin: auto 20em;
+      background: whitesmoke;
+  }
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  .error {
+    color: red;
+  }
+  .error-msg {
+    display: block;
+    position: absolute;
+    font-size: 75%;
+    bottom: -2em;
+  }
+  .mat-form-field {
+    margin-bottom: .5em;
+  }
   

@@ -1,16 +1,31 @@
-<h1>User Registration Form</h1>
 
-<div class="Container">
-  <div class="row">
+<mat-card>
+  <mat-card-title>
 
-    <div class="col-2">
-      <div class="user-details-container">
-        <img class="user-image" src="https://randomuser.me/api/portraits/lego/3.jpg"/>
-       
-      </div>
     
+    <mat-card-header align="end">
 
-    <div class="col">
+        <div class="row">
+
+            <div class="col-2">
+              <div class="user-details-container">
+                <img class="user-image" src="https://randomuser.me/api/portraits/lego/3.jpg"/>
+               
+              </div>
+        </div>
+     </div>
+    
+    </mat-card-header>
+    
+  </mat-card-title>
+
+
+
+
+  
+    
+ <mat-card-content>
+    
       <h2 class="section-title">User details</h2>
       <form [formGroup]="userDetailsForm" >
         <mat-form-field class="full-width">
@@ -107,7 +122,7 @@
 
      
  
-    <div class="col">
+    
 
         <mat-form-field class="full-width">
           <input matInput maxlength="25" placeholder="Username" formControlName="username" required>
@@ -147,12 +162,17 @@
           <mat-error  class="error-message" *ngIf="userDetailsForm.get('terms').hasError(validation.type) && (userDetailsForm.get('terms').dirty || userDetailsForm.get('terms').touched)">{{validation.message}}</mat-error>
         </mat-error>
       
+      </form>
+       
+    </mat-card-content>
+
+    <mat-card-actions align="end">
         <button class="submit-btn" color="primary" mat-raised-button type="submit" [disabled]="!userDetailsForm.valid">
           Submit
         </button>
-        </div>
-      </form>
+    </mat-card-actions>
     
-    </div>
-  </div>
-</div>
+    
+    
+</mat-card>
+
