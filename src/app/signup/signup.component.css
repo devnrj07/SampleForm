@@ -1,0 +1,79 @@
+
+    .container {
+             display:block;
+              margin-top: 50px;
+              background: rgb(43, 39, 39);
+              
+    }
+                                         // Workaround for https://github.com/angular/material2/issues/4580.
+    mat-form-field .mat-form-field {
+      &-underline {
+        position: relative;
+        bottom: auto;
+      }
+    }
+    .section-title {
+      margin-bottom: 20px;
+    }
+  
+    .user-details-container {
+      padding: 20px;
+      text-align: center;
+  
+    }
+     
+    .user-image {
+        width: 10%;
+        border-radius: 50%;
+      }
+  
+  .user-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 30px;
+        display: block;
+      }
+  
+      .user-bio {
+        font-size: 12px;
+        margin-top: 20px;
+        display: block;
+        color: rgba(0, 0, 0, 0.70);
+      }
+    
+  
+  
+  
+    .full-width {
+      content: '';
+      align-content: center;
+      margin-left: 30%;
+      display:block;
+      height: 50%;
+      width: 30%;
+      margin-bottom: 10px;
+    }
+  
+    .error-message {
+      font-size: 12px;
+    }
+  
+    .double-line-hint {
+         
+    }
+
+   .mat-input-hint-wrapper {
+        flex-wrap: wrap;
+   }
+        
+   .hint-line {
+          flex: 0 0 100%;
+        }
+      
+
+  
+    .submit-btn {
+      margin-top: 20px;
+      margin-left: 40%;
+    }
+  
