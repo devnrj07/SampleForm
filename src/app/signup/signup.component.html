@@ -58,7 +58,7 @@
         </mat-form-field>
      
         <br><br>
-       <div >
+       <div class="">
          <mat-radio-group placeholder="Gender" class="radio-group" formControlName="gender">
               <mat-radio-button class="full width" *ngFor="let x of genders" [value]="x">
                 {{x}}
@@ -72,7 +72,7 @@
        <br><br>
 
         <mat-form-field class="full-width">
-          <textarea matInput maxlength="256" placeholder="Bio" formControlName="bio" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
+          <textarea matInput maxlength="256" placeholder="Bio" formControlName="bio" matTextareaAutosize matAutosizeMinRows="3" matAutosizeMaxRows="6"></textarea>
           <mat-hint align="start">Tell us about yourself</mat-hint>
           <mat-hint align="end">{{userDetailsForm.get('bio').value.length}} / 256</mat-hint>
           <mat-error *ngFor="let validation of validation_messages.bio">
@@ -81,9 +81,9 @@
         </mat-form-field>
 
 
-      
+      <br><br>
 
-        <div formGroupName="address" class="row">
+        <div formGroupName="address" >
          
           <mat-form-field class="full-width">
              <input matInput placeholder="City" formControlName="city" >
@@ -101,7 +101,7 @@
           
           </mat-form-field>
          
-         
+         <div class="row">
         <mat-form-field class="full-width col-4">
             <mat-select formControlName="country" placeholder="Country">
               <mat-option *ngFor="let country of countries" [value]="country">
@@ -118,6 +118,7 @@
             </mat-select>
           </mat-form-field>
       </div>
+    </div>
        
 
      

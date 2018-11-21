@@ -11,12 +11,7 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
   loginForm: FormGroup;
 
-  navLinks = [
-    { path: '/login', label: 'Sign In' },
-    { path: '/sign', label: 'Sign Up' },
-   
-   
-  ];
+ 
 
   ngOnInit() {
     this.createform();

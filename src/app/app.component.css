@@ -1,3 +1,8 @@
 .body{
     background: grey;
 }
+
+.mat-tab-nav-bar{
+    margin: 5em 23em;
+    width:15em;
+  }
